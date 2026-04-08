@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Employee Management System</h2>
+
+
+<input type="text" id="name" placeholder="Name">
+<input type="number" id="salary" placeholder="Salary">
+
+<select id="department">
+    <option value="IT">IT</option>
+    <option value="HR">HR</option>
+    <option value="Finance">Finance</option>
+</select>
+
+<button onclick="addEmployee()">Add Employee</button>
+
+<br><br>
+
+<select id="filterDept">
+    <option value="All">All Departments</option>
+    <option value="IT">IT</option>
+    <option value="HR">HR</option>
+    <option value="Finance">Finance</option>
+</select>
+
+<button onclick="filterEmployees()">Filter</button>
+<button onclick="calculateAverage()">Average Salary</button>
+
+<h3 id="avgResult"></h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Salary</th>
+            <th>Department</th>
+        </tr>
+    </thead>
+    <tbody id="employeeTable"></tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
+    
